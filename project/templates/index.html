@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Account
+{% endblock %}
+
+{% block main %}
+    <div class="indexbody">
+        <header>
+            <h1>Event / To Do List</h1>
+            {% if error %}
+            <p class=error>{{ error }}
+            {% endif %}
+            <form id="mainpage" action = "/add" method="post">
+                <input autofocus id="event-input" name="event" placeholder="Task" type="text">
+                <input id="event-sumbit" type="submit" value="Add">
+            </form>
+        </header>
+        <section class="list">
+            <h2>TO DO</h2>
+            <div id="event">
+                <div class="task">
+                    <div class="content">
+                        {% for row in events %}
+                            <form class="action" action = "/delete" method="post">
+                                <input  id="event-input" name="task" value="{{row[0]}}">
+                                <button class='btn btn-primary' type='delete'>Delete</button>
+                            </form>
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

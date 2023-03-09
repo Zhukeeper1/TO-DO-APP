@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="lbody">
+        <div class="lcontainer">
+            <div class="form login">
+                <span class="title">Login</span>
+                <form action="/login" method="post">
+                    <div class="in">
+                        <input autocomplete="off" autofocus id="username" name="username" placeholder="Username" type="text">
+                    </div>
+                    <div class="in">
+                        <input autocomplete="off" id="password" name="password" placeholder="Password" type="password">
+                    </div>
+
+                    <button class="btn btn-primary btn-lg in bfield" type="submit">Log In</button>
+
+                    <div class="signup">
+                        <span calss="text">Don't have a account?
+                            <a href="/register" class="text signup">Signup now</a>
+                        </span>
+                    </div>
+
+                </form>
+                {% if error %}
+                <p class=error><strong>Error:</strong>{{ error }}
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

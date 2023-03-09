@@ -1,0 +1,183 @@
+*{
+    font-size: 15px;
+}
+
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+
+p {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+   }
+
+
+.lbody{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#4070f4;
+
+}
+
+.lcontainer{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.lcontainer .form{
+    padding: 30px;
+}
+
+.form .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.form .in{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px
+
+}
+
+.in input{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid gray;
+}
+
+.bfield{
+    margin-top: 1rem;
+}
+
+.form .signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form .login{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* main index configs */
+.indexbody{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    height: flex;
+    min-height: 100vh;
+    background:#73C6B6 ;
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin:0 auto;
+}
+
+header h1(
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+)
+
+#mainpage{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#event-input{
+    width: 600px;
+    font-size:1.25rem;
+    background-color: #5D6D7E;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+#event-input::placeholder{
+    color: black;
+}
+
+#event-sumbit{
+    color: #6C3483;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    background-color: #BB8FCE;
+}
+#event-sumbit:hover{
+    opacity: 0.8;
+}
+
+.list{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin:0 auto;
+}
+.list h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#event .task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+#event .task .action{
+    display: flex;
+    margin: 0 1rem;
+}
+
+#event .task .content{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+
+}
+
+#delete{
+    color: #C0392B;
+    text-decoration: none;
+    background-color: pink;
+    font-size: 0.8rem;
+    font-weight: 50;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    background-color: #BB8FCE;
+}
+#delete:hover{
+    opacity: 0.8;
+}
